@@ -8,17 +8,19 @@
 </head>
 <body>
   <h1>My To-Do List</h1>
-  <input class="input" type="text" name="submit" placeholder="To-Do">
-  <input class="submit" type="submit" name="submit">
+  <form id="toDoForm">
+  	<input id="toInput">
+  	<button id="button" type="submit" onclick="return false">Submit</button>
+  	<button id="clear" type='submit' onclick="return false">Clear</button>
+  </form>
   <div class='container'>
-  	<div class='box' id="todo">	
-  	</div>
-  	<div class='box' id="done"></div>
+  	<ul id='todoList'>
+  	</ul>
   </div>
 
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script type="text/javascript" src='./js/main.js'></script>
 </body>
 </html>
